@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/style.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+        <a href="contact.html">Contacts</a>
+    </div>
+  </header>
+  <hr>
+    <main>
+      <section>
+        <h2><p>Drop me a line ...</p></h2>
+      </section>
+      <!--Section for contacting me-->
+      <section>
+        <form action="info.php" method="post">
+          <div>
+            <label for="name">Name*: </label> <br />
+            <input
+              type="text"
+              id="name"
+              name="Name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div>
+            <label for="email">Email*:</label> <br />
+            <input type="Email" id="email" name="email" />
+          </div>
+
+          <div>
+            <label for="phneNo">Tel</label> <br />
+            <input type="tel" name="number" id="phneNo" />
+          </div>
+          <div>
+            <label for="project">Project:</label> <br />
+            <select name="Projects" id="project">
+              <option value="android">Android application</option>
+              <option value="embedded">Web application</option>
+              <option value="IOT">Console application</option>
+            </select>
+          </div>
+          <div>
+            <label for="text">Description</label> <br />
+            <textarea name="text" id="text" cols="30" rows="10">
+comments </textarea
+            >
+          </div>
+          <div>
+            <input type="checkbox" name="subscribe" id="subscription" />
+            <label for="subscription"> subscribe for updates </label>
+          </div>
+          <input type="submit" value="Send messege" />
+        </form>
+      </section>
+    </main>
+    <hr>
+
+    <footer>
+        <ul>
+          <li><a href="https://github.com/Higanpaul">Github</a></li>
+          <li><a href="https://twitter.com/Higanpaul?s=09">Twitter</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/higanpaul-69136a230"
+              >Linked In</a
+            >
+          </li>
+        </ul>
+    </footer>
+  </body>
+</html>
